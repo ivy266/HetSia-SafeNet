@@ -14,8 +14,8 @@ pip install -r requirements.txt
 ### Model training consists of two parts: data preprocessing and model training.
 
 ### 1. Data Preprocessing
-The ADR prediction model (HetSia-SafeNet) is trained using 9202 drugs with 18 ADR labels. The raw ADR dataset is stored in `./data_process/ADR_tree_label`. You can download the ADR_tree_label folder from [this link](https://drive.google.com/drive/folders/1YwZNXHq7piL_VRzTHEjTfCbD4kfCDCr0).
-Run `./data_process/drug_ac50_cmax_get.ipynb` to combine off-target data predicted by PreMOTA and Cmax,free values predicted by the MotifAttnNet model. This will generate the required drug features to construct the training dataset.You can download ADR_multitask_dataset, ADR_multitask_dataset_random_split, and ADR_multitask_dataset_scaffold_split from [this link](https://drive.google.com/drive/folders/1YwZNXHq7piL_VRzTHEjTfCbD4kfCDCr0) and place them in the `./Data` folder.
+The ADR prediction model (HetSia-SafeNet) is trained using 9202 drugs with 18 ADR labels. The raw ADR dataset is stored in `./data_process/ADR_tree_label`. You can download the ADR_tree_label folder from [this link](https://drive.google.com/drive/folders/1BrL1Gw12G4eamExrf2lmc_fnAXidmjo_?usp=drive_link).
+Run `./data_process/drug_ac50_cmax_get.ipynb` to combine off-target data predicted by PreMOTA and Cmax,free values predicted by the MotifAttnNet model. This will generate the required drug features to construct the training dataset.You can download ADR_multitask_dataset, ADR_multitask_dataset_random_split, and ADR_multitask_dataset_scaffold_split from [this link](https://drive.google.com/drive/folders/1jUWwrYmRuj47Ko7ldkTzn213Y5bgaB_Y?usp=drive_link) and place them in the `./Data` folder.
 
 ### 2. Data Splitting
 Run `./Data/data_split.ipynb` to split the dataset either randomly or using a scaffold-based approach.
